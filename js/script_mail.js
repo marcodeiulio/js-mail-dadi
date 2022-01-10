@@ -24,21 +24,22 @@ Consigli del giorno:
 
 //# Mail
 
-/* const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
+const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
 console.table(emailList);
 
 const logIn = (prompt('Insert Email', 'mdeiulio@icloud.com').trim()).toLocaleLowerCase();
 console.log(`Email inserted: ${logIn}`);
 
 if (emailList.includes(logIn)) {
-	console.log('Valid Email');
+	console.log(`${logIn} is a valid Email address.`);
+	console.log('Authorized Access.');
 } else {
-	console.log('Invalid Email');
-} */
+	console.log('Access Denied.');
+}
 
 //# Alternativa con ciclo for
 
-const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
+/* const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
 console.table(emailList);
 console.log(`Array lenght: ${emailList.length}`);
 
@@ -57,4 +58,4 @@ if (validation == true) {
 	console.log('Authorized Access.');
 } else {
 	console.log('Access Denied.')
-}
+} */
