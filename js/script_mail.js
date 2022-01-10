@@ -35,4 +35,3 @@ if (emailList.includes(logIn)) {
 } else {
 	console.log('Invalid Email');
 }
-
