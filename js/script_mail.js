@@ -33,6 +33,11 @@ console.log(`Email inserted: ${logIn}`);
 const printAuthorization = document.getElementById('access_granted');
 const printDenial = document.getElementById('access_denied');
 
+if (!(logIn)) {
+	printDenial.innerText = 'Access Denied.';
+	alert('Email address not inserted. Reload Page.');
+}
+
 //# Mail '.includes()' version
 //! Decomment one version only!
 
