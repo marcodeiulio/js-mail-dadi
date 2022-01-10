@@ -27,8 +27,12 @@ Consigli del giorno:
 const cpuNumber = Math.floor((Math.random() * 6) + 1);
 console.log(`Numero del computer: ${cpuNumber}`);
 
+document.getElementById('cpu_number').innerText = cpuNumber;
+
 const userNumber = Math.floor((Math.random() * 6) + 1);
 console.log(`Il tuo numero: ${userNumber}`);
+
+document.getElementById('user_number').innerText = userNumber;
 
 const resultPrint = document.getElementById('result');
 
