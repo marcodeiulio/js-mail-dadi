@@ -43,8 +43,8 @@ if (!(logIn)) {
 
 if (emailList.includes(logIn)) {
 	console.log(`${logIn} is a valid Email address.`);
-	console.log('Authorized Access.');
-	printAuthorization.innerText = 'Authorized Access.';
+	console.log('Access Granted.');
+	printAuthorization.innerText = 'Access Granted.';
 } else {
 	console.log('Access Denied.');
 	console.log('Access Denied.');
@@ -63,8 +63,8 @@ for (i = 0; i < emailList.length; i++) {
 	}
 }
 if (validation == true) {
-	console.log('Authorized Access.');
-	printAuthorization.innerText = 'Authorized Access.';
+	console.log('Access Granted.');
+	printAuthorization.innerText = 'Access Granted.';
 } else {
 	console.log('Access Denied.')
 	printDenial.innerText = 'Access Denied.';
