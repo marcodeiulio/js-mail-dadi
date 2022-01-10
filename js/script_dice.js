@@ -30,11 +30,16 @@ console.log(`Numero del computer: ${cpuNumber}`);
 const userNumber = Math.floor((Math.random() * 6) + 1);
 console.log(`Il tuo numero: ${userNumber}`);
 
+const resultPrint = document.getElementById('result');
+
 if (userNumber > cpuNumber) {
 	console.log('Hai vinto!');
+	resultPrint.innerText = 'Hai vinto!'
 }
 else if (userNumber === cpuNumber) {
 	console.log('Siete pari!');
+	resultPrint.innerText = 'Siete pari!'
 } else {
 	console.log('Hai perso!');
+	resultPrint.innerText = 'Hai perso!'
 }

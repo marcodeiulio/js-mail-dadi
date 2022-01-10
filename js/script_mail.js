@@ -41,7 +41,7 @@ if (!(logIn)) {
 //# Mail '.includes()' version
 //! Decomment one version only!
 
-/* if (emailList.includes(logIn)) {
+if (emailList.includes(logIn)) {
 	console.log(`${logIn} is a valid Email address.`);
 	console.log('Authorized Access.');
 	printAuthorization.innerText = 'Authorized Access.';
@@ -49,12 +49,12 @@ if (!(logIn)) {
 	console.log('Access Denied.');
 	console.log('Access Denied.');
 	printDenial.innerText = 'Access Denied.';
-} */
+}
 
 //# Mail 'for' version
 //! Decomment one version only!
 
-let validation;
+/* let validation;
 
 for (i = 0; i < emailList.length; i++) {
 	if (logIn === emailList[i]) {
@@ -68,4 +68,4 @@ if (validation == true) {
 } else {
 	console.log('Access Denied.')
 	printDenial.innerText = 'Access Denied.';
-}
+} */
