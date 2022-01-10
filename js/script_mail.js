@@ -1,4 +1,4 @@
-/* 
+/*
 # Mail
 Crea un array di email;
 Chiedi all’utente la sua email.
@@ -24,7 +24,7 @@ Consigli del giorno:
 
 //# Mail
 
-const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
+/* const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
 console.table(emailList);
 
 const logIn = (prompt('Insert Email', 'mdeiulio@icloud.com').trim()).toLocaleLowerCase();
@@ -34,4 +34,27 @@ if (emailList.includes(logIn)) {
 	console.log('Valid Email');
 } else {
 	console.log('Invalid Email');
+} */
+
+//# Alternativa con ciclo for
+
+const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
+console.table(emailList);
+console.log(`Array lenght: ${emailList.length}`);
+
+const logIn = (prompt('Insert Email', 'mdeiulio@icloud.com').trim()).toLocaleLowerCase();
+console.log(`Email inserted: ${logIn}`);
+
+let validation;
+
+for (i = 0; i < emailList.length; i++) {
+	if (logIn === emailList[i]) {
+		console.log(`${emailList[i]} is a valid Email address.`);
+		validation = true;
+	}
+}
+if (validation == true) {
+	console.log('Authorized Access.');
+} else {
+	console.log('Access Denied.')
 }
