@@ -22,7 +22,7 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 */
 
-//# Mail
+//# Mail common code
 
 const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
 console.table(emailList);
@@ -30,21 +30,24 @@ console.table(emailList);
 const logIn = (prompt('Insert Email', 'mdeiulio@icloud.com').trim()).toLocaleLowerCase();
 console.log(`Email inserted: ${logIn}`);
 
-if (emailList.includes(logIn)) {
+const printAuthorization = document.getElementById('access_granted');
+const printDenial = document.getElementById('access_denied');
+
+//# Mail '.includes()' version
+//! Decomment one version only!
+
+/* if (emailList.includes(logIn)) {
 	console.log(`${logIn} is a valid Email address.`);
 	console.log('Authorized Access.');
+	printAuthorization.innerText = 'Authorized Access.';
 } else {
 	console.log('Access Denied.');
-}
+	console.log('Access Denied.');
+	printDenial.innerText = 'Access Denied.';
+} */
 
-//# Alternativa con ciclo for
-
-/* const emailList = ['marco98.deiu@gmail.com', 'mdeiulio@icloud.com', 'abbonati@ilpost.it', 'morning@ilpost.it'];
-console.table(emailList);
-console.log(`Array lenght: ${emailList.length}`);
-
-const logIn = (prompt('Insert Email', 'mdeiulio@icloud.com').trim()).toLocaleLowerCase();
-console.log(`Email inserted: ${logIn}`);
+//# Mail 'for' version
+//! Decomment one version only!
 
 let validation;
 
@@ -56,6 +59,8 @@ for (i = 0; i < emailList.length; i++) {
 }
 if (validation == true) {
 	console.log('Authorized Access.');
+	printAuthorization.innerText = 'Authorized Access.';
 } else {
 	console.log('Access Denied.')
-} */
+	printDenial.innerText = 'Access Denied.';
+}
