@@ -54,7 +54,7 @@ if (emailList.includes(logIn)) {
 //# Mail 'for' version
 //! Decomment one version only!
 
-/* let validation;
+/* let validation = false;
 
 for (i = 0; i < emailList.length; i++) {
 	if (logIn === emailList[i]) {
